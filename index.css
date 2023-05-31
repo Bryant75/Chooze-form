@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fdfdfd;
+}
+
+h1 {
+    text-align: center;
+    color: #9885F7;
+
+}
+
+h2 {
+    margin-top: 0;
+    color: #9885F7;
+    text-align: center;
+}
+h3 {
+    margin-top: 0;
+    color: #b2a8fe;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#form {
+    align-items: center;
+
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(208, 208, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img span {
+    font-size: 16px;
+    color: #000000;
+}
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #9885F7;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    display: inline-block;
+    align-self:center;
+    width:50% ;
+}
+
+button:hover {
+    background-color: #7e72d8;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+button.correct {
+    background-color: #60b961;
+    color: #fff;
+}
+
+button.incorrect {
+    background-color: #e65f5f;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;/* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+    color: #b2a8fe;
+}
+
+#QT {
+    text-align: center;
+}
+
+#results {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#results h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+/* Styliser la barre de progression */
+#progress-bar-container {
+    background-color: #ddd;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    background-color: #60b961;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}

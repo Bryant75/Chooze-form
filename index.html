@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fomrulaire Interfactif</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    
+
+    <!-- Form-1 -->
+    <div id="form">
+        <h1>Quelle est votre situation ?</h1>
+        <h3>Commencez à réduire votre pression fiscale</h3>
+
+        <div class="img">
+            <span>*illustration</span>
+        </div>
+
+        <div class="options">
+            <button onclick="checkAnswer(this)">Célibataire</button>
+            <button onclick="checkAnswer(this)">En couple</button>
+            <button onclick="checkAnswer(this)">Veuf(ve)</button>
+            <button onclick="checkAnswer(this)">Divorcé(e)</button>
+            <button onclick="checkAnswer(this)">En concubinage</button>
+        </div>
+    </div>
+
+    <!-- Form-2 -->
+    <div id="form">
+        <h2>Quel est votre âge</h2>
+
+
+        <div class="options">
+            <button onclick="checkAnswer(this)">18-25</button>
+            <button onclick="checkAnswer(this)">26-40</button>
+            <button onclick="checkAnswer(this)">41-55</button>
+            <button onclick="checkAnswer(this)">55+</button>
+        </div>
+    </div>
+
+    <!-- Form-3 -->
+    <div id="form">
+        <h2>Combien d'enfants avez-vous à charge ?</h2>
+
+        <div class="options">
+            <button onclick="checkAnswer(this)">0</button>
+            <button onclick="checkAnswer(this)">1</button>
+            <button onclick="checkAnswer(this)">2</button>
+            <button onclick="checkAnswer(this)">3+</button>
+        </div>
+    </div>
+
+    <p id="QT">Question 1/3</p>
+    <!-- Barre de progression -->
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Résultats -->
+    <div id="results">
+        <h2>Résultats :</h2>
+        <p id="score">0</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
