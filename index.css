@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0%;
+}
+
+h1 {
+    text-align: center;
+    color: #9885F7;
+}
+
+h3 {
+    color: #b2a8fe;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(208, 208, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img span {
+    font-size: 16px;
+    color: #000000;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.loading{
+    position: absolute;
+    bottom: 50%;
+    top: 70%;
+    right: 60%;
+    left: 80%;
+    transform: scale(0.2); /* Réduire la taille du gif de 50%*/
+}
+
+#QT-1,
+#QT-2,
+#QT-3 {
+    text-align: center;
+}
+
+/* Styliser la barre de progression */
+
+#center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    
+    
+}
+
+.progress-bar-container {
+     background-color: #ddd;
+     border-radius: 20px;
+     height: 20px;
+     width: 50%;
+     display: flex;
+}
+
+.progress-bar-container #progress-bar {
+    position: absolute;
+    height: 20px;
+    width: 16.66%;
+    border-radius: 20px;
+    background-color: #9885F7;
+    transition: width 0.5s ease;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #9885F7;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    display: inline-block;
+    align-self:center;
+    width:50% ;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #9885F7;
+    border: 1px solid #9885F7;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;/* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+    color: #b2a8fe;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden-gif {
+    display: none;
+}
