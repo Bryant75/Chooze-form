@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fomrulaire Interfactif</title>
+    <meta charset="utf-8">    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    
+    <!-- formulaires généraux -->
+    <div id="general-form">
+        <!-- Form-1 -->
+        <div id="form-1">
+            <h1>Quelle est votre situation ?</h1>
+            <h3>Commencez à réduire votre pression fiscale</h3>
+
+            <!-- illustration de la situation présenté -->
+            <div class="img">
+                <span>*illustration</span>
+            </div>
+            
+            <!-- Creer un espacement -->
+            <br>
+
+            <!-- choix possibles -->
+            <div class="options">
+                <button onclick="move()">Célibataire</button>
+                <button onclick="move()">En couple</button>
+                <button onclick="move()">Veuf(ve)</button>
+                <button onclick="move()">Divorcé(e)</button>
+                <button onclick="move()">En concubinage</button>
+            </div>           
+
+            <br>
+
+            <!-- Numéro de la question en cours -->
+            <p id="QT-1">Question 1/3</p>
+            
+        </div>
+
+        <!-- Form-2 -->
+        <div id="form-2" class="hidden">
+            <h1>Quel est votre âge ?</h1>
+            <h3>Commencez à réduire votre pression fiscale</h3>
+
+            <div class="img">
+                <span>*illustration</span>
+            </div>
+            
+            <br>
+
+            <div class="options">
+                <button onclick="move()">18-25</button>
+                <button onclick="move()">26-40</button>
+                <button onclick="move()">41-55</button>
+                <button onclick="move()">55+</button>
+            </div>            
+
+            <br>
+            <br>
+            <br>
+            
+            <!-- Numéro de la question en cours -->
+            <p id="QT-2">Question 1/3</p>
+            
+        </div>
+
+        <!-- Form-3 -->
+        <div id="form-3" class="hidden">
+            <h1>Combien d'enfants avez-vous à charge ?</h1>
+            <h3>Commencez à réduire votre pression fiscale</h3>
+
+            <div class="img">
+                <span>*illustration</span>
+            </div>
+            
+            <br>
+
+            <div class="options">
+                <button onclick="move()">0</button>
+                <button onclick="move()">1</button>
+                <button onclick="move()">2</button>
+                <button onclick="move()">3+</button>
+            </div>            
+            
+            <br>
+
+            <!-- Numéro de la question en cours -->
+            <p id="QT-3">Question 1/3</p>
+
+        </div>
+
+        <!-- Barre de progression -->
+            <div id="center-container">
+                <div class="progress-bar-container" id ="hidden-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+
+        <!-- gif animé qui imite le symbole de l'infini -->
+        <div class="loading">
+            <img src="chooze-logo-anime.gif" alt="mon gif-loading...">
+        </div>
+            
+    </div>
+
+    <!-- GIF de chargement -->
+    <div id="loading-gif" class="hidden-gif">
+        <img src="chooze-logo-anime.gif" alt="Chargement...">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
